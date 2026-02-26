@@ -1,0 +1,36 @@
+{
+  "name": "Association",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Nome da associa\u00e7\u00e3o"
+    },
+    "president_email": {
+      "type": "string",
+      "description": "Email do presidente da associa\u00e7\u00e3o (deve corresponder ao email de login)"
+    },
+    "president_name": {
+      "type": "string",
+      "description": "Nome do presidente"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Telefone de contato"
+    },
+    "address": {
+      "type": "string",
+      "description": "Endere\u00e7o da associa\u00e7\u00e3o"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true,
+      "description": "Se a associa\u00e7\u00e3o est\u00e1 ativa"
+    }
+  },
+  "required": [
+    "name",
+    "president_email",
+    "president_name"
+  ]
+}
