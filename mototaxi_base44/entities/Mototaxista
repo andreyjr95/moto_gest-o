@@ -1,0 +1,133 @@
+{
+  "name": "Mototaxista",
+  "type": "object",
+  "properties": {
+    "full_name": {
+      "type": "string",
+      "description": "Nome completo do mototaxista"
+    },
+    "cpf": {
+      "type": "string",
+      "description": "CPF do mototaxista"
+    },
+    "rg": {
+      "type": "string",
+      "description": "RG do mototaxista"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Telefone de contato"
+    },
+    "address": {
+      "type": "string",
+      "description": "Endere\u00e7o completo"
+    },
+    "association_id": {
+      "type": "string",
+      "description": "ID da associa\u00e7\u00e3o a que pertence"
+    },
+    "association_name": {
+      "type": "string",
+      "description": "Nome da associa\u00e7\u00e3o"
+    },
+    "has_cnh": {
+      "type": "boolean",
+      "default": false,
+      "description": "Se possui CNH v\u00e1lida"
+    },
+    "cnh_category": {
+      "type": "string",
+      "description": "Categoria da CNH (A, AB, etc.)"
+    },
+    "cnh_expiry": {
+      "type": "string",
+      "format": "date",
+      "description": "Data de validade da CNH"
+    },
+    "has_contran_course": {
+      "type": "boolean",
+      "default": false,
+      "description": "Se possui o curso do CONTRAN"
+    },
+    "contran_course_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Data de conclus\u00e3o do curso CONTRAN"
+    },
+    "vehicle_plate": {
+      "type": "string",
+      "description": "Placa da motocicleta"
+    },
+    "vehicle_model": {
+      "type": "string",
+      "description": "Modelo da motocicleta"
+    },
+    "vehicle_color": {
+      "type": "string",
+      "description": "Cor da motocicleta"
+    },
+    "vehicle_year": {
+      "type": "string",
+      "description": "Ano da motocicleta"
+    },
+    "photo_url": {
+      "type": "string",
+      "description": "Foto do mototaxista"
+    },
+    "rg_front_url": {
+      "type": "string",
+      "description": "Foto frente do RG"
+    },
+    "rg_back_url": {
+      "type": "string",
+      "description": "Foto verso do RG"
+    },
+    "cpf_front_url": {
+      "type": "string",
+      "description": "Foto frente do CPF"
+    },
+    "cpf_back_url": {
+      "type": "string",
+      "description": "Foto verso do CPF"
+    },
+    "cnh_front_url": {
+      "type": "string",
+      "description": "Foto frente da CNH"
+    },
+    "cnh_back_url": {
+      "type": "string",
+      "description": "Foto verso da CNH"
+    },
+    "proof_of_residence_url": {
+      "type": "string",
+      "description": "Foto do comprovante de resid\u00eancia"
+    },
+    "vehicle_doc_front_url": {
+      "type": "string",
+      "description": "Foto frente da documenta\u00e7\u00e3o do ve\u00edculo"
+    },
+    "vehicle_doc_back_url": {
+      "type": "string",
+      "description": "Foto verso da documenta\u00e7\u00e3o do ve\u00edculo"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "inactive",
+        "pending"
+      ],
+      "default": "active",
+      "description": "Status do cadastro"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Observa\u00e7\u00f5es adicionais"
+    }
+  },
+  "required": [
+    "full_name",
+    "cpf",
+    "association_id"
+  ]
+}
